@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Admin - SportClub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="SportClub">
+        <h2>Panel de Administración</h2>
+    </header>
+    
+    <nav class="navbar nav-admin">
+        <div class="nav-links">
+            <a href="#">Inicio</a>
+            <a href="#">Usuarios</a>
+            <a href="#">Estadísticas</a>
+            <a href="#">Configuración</a>
+        </div>
+        <div class="nav-actions">
+            <a href="#">Editar Perfil</a>
+            <a href="index.html">Cerrar Sesión</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="dashboard-grid">
+            <div class="card">
+                <h3>Gestión de Usuarios</h3>
+                <input type="text" placeholder="Buscar..." style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc;">
+                <ul style="line-height: 2.5;">
+                    <li>Juan P. - <em>Usuario</em> <button class="btn" style="padding: 2px 10px; font-size: 0.8em; float: right;">Editar</button></li>
+                    <li>Roberto M. - <em>Coach</em> <button class="btn" style="padding: 2px 10px; font-size: 0.8em; float: right;">Editar</button></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Estadísticas del Sistema</h3>
+                <div style="background: var(--bg-light); padding: 15px; border-radius: 5px; margin-bottom: 10px; text-align: center;">
+                    <h2 style="color: var(--theme-admin);">150</h2>
+                    <p>Usuarios Activos</p>
+                </div>
+                <div style="background: var(--bg-light); padding: 15px; border-radius: 5px; text-align: center;">
+                    <h2 style="color: var(--theme-admin);">45</h2>
+                    <p>Clases esta semana</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Reportes Generales</h3>
+                <p>Informe Mensual - Abril</p>
+                <button class="btn btn-outline" style="color:var(--primary); border-color:var(--primary); width: 100%; margin-bottom: 15px;">Descargar PDF</button>
+                
+                <hr style="margin: 15px 0;">
+                <button class="btn btn-primary" style="width: 100%;">⚙️ Configuración General</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
