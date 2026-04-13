@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Coach - SportClub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="SportClub">
+        <h2>Panel de Entrenador</h2>
+    </header>
+    
+    <nav class="navbar nav-coach">
+        <div class="nav-links">
+            <a href="#">Inicio</a>
+            <a href="#">Mis Alumnos</a>
+            <a href="#">Mi Horario</a>
+            <a href="#">Reportes</a>
+        </div>
+        <div class="nav-actions">
+            <a href="#">Editar Perfil</a>
+            <a href="index.html">Cerrar Sesión</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Bienvenido, Coach Roberto</h1>
+        
+        <div class="dashboard-grid">
+            <div class="card">
+                <h3>Mis Alumnos</h3>
+                <ul style="line-height: 2.5;">
+                    <li>Juan Pérez (juan@correo.com) <button class="btn btn-outline" style="color:var(--primary); border-color:var(--primary); padding: 2px 10px; font-size: 0.8em; float: right;">Ver Progreso</button></li>
+                    <li>María López (maria@correo.com) <button class="btn btn-outline" style="color:var(--primary); border-color:var(--primary); padding: 2px 10px; font-size: 0.8em; float: right;">Ver Progreso</button></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Clases Asignadas & Mi Horario</h3>
+                <table style="width: 100%; text-align: left; border-collapse: collapse; margin-top: 10px;">
+                    <tr style="border-bottom: 1px solid #ccc;">
+                        <th>Día</th><th>Hora</th><th>Clase</th>
+                    </tr>
+                    <tr><td>Lunes</td><td>18:00</td><td>Crossfit</td></tr>
+                    <tr><td>Miércoles</td><td>10:00</td><td>Spinning</td></tr>
+                    <tr><td>Viernes</td><td>19:00</td><td>Boxeo</td></tr>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
