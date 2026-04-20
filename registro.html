@@ -2,19 +2,45 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro - SportClub</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="auth-container" style="margin-top: 40px;">
         <img src="logo.png" alt="SportClub Logo" style="height: 60px; margin-bottom: 20px;">
+        
         <h2>Crear Cuenta</h2>
+        
         <form action="login.html" style="margin-top: 20px;">
-            <div class="form-group"><label>Nombre Completo</label><input type="text" required></div>
-            <div class="form-group"><label>Correo Electrónico</label><input type="email" required></div>
-            <div class="form-group"><label>Contraseña</label><input type="password" required></div>
+            <div class="form-group">
+                <label>Nombre Completo</label>
+                <input type="text" placeholder="Juan Pérez" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Edad</label>
+                <input type="number" placeholder="25" min="12" max="100" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Correo Electrónico</label>
+                <input type="email" placeholder="usuario@correo.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Contraseña</label>
+                <input type="password" placeholder="********" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Repetir Contraseña</label>
+                <input type="password" placeholder="********" required>
+            </div>
+            
             <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">Registrarme</button>
         </form>
+        
         <div style="margin-top: 20px; font-size: 0.9em;">
             <a href="login.html" style="color: var(--primary);">¿Ya tienes cuenta? Inicia sesión</a>
         </div>
